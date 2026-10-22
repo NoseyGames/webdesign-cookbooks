@@ -1,0 +1,230 @@
+[
+  {
+    "id": "aethr",
+    "name": "Aethr",
+    "url": "https://getaethr.ai/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/aethr.md",
+    "path": "references/studies/aethr.md",
+    "tags": [
+      "editorial",
+      "serif",
+      "asymmetry",
+      "network-metaphor"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "square",
+    "name": "Square",
+    "url": "https://squareup.com/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/square.md",
+    "path": "references/studies/square.md",
+    "tags": [
+      "commerce",
+      "information-architecture",
+      "product-comparison"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "colmez",
+    "name": "Colmez",
+    "url": "https://www.colmez.com/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/colmez.md",
+    "path": "references/studies/colmez.md",
+    "tags": [
+      "industrial",
+      "oversized-type",
+      "business-software"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "onearth",
+    "name": "OnEarth",
+    "url": "https://onearth-conservation.webflow.io/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/onearth.md",
+    "path": "references/studies/onearth.md",
+    "tags": [
+      "template",
+      "photography",
+      "conservation",
+      "campaigns"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "raycast",
+    "name": "Raycast",
+    "url": "https://www.raycast.com/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/raycast.md",
+    "path": "references/studies/raycast.md",
+    "tags": [
+      "product",
+      "dark",
+      "ecosystem",
+      "feature-demonstration"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "heist",
+    "name": "Heist",
+    "url": "https://www.heist.co/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/heist.md",
+    "path": "references/studies/heist.md",
+    "tags": [
+      "commerce",
+      "product-photography",
+      "brand-story"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "ardor",
+    "name": "Ardor",
+    "url": "https://ardor.cloud/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/ardor.md",
+    "path": "references/studies/ardor.md",
+    "tags": [
+      "product-demo",
+      "light",
+      "task-interface"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "drool",
+    "name": "Drool",
+    "url": "https://www.drool.design/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/drool.md",
+    "path": "references/studies/drool.md",
+    "tags": [
+      "studio",
+      "illustration",
+      "expressive-typography"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "nikola-radeski",
+    "name": "Nikola Radeski",
+    "url": "https://nikolaradeski.com/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/nikola-radeski.md",
+    "path": "references/studies/nikola-radeski.md",
+    "tags": [
+      "portfolio",
+      "portrait",
+      "navigation-dock"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "odoo-design",
+    "name": "Odoo Web Design",
+    "url": "https://design.odoo.com/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/odoo-design.md",
+    "path": "references/studies/odoo-design.md",
+    "tags": [
+      "studio",
+      "project-grid",
+      "accent-color"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "studio-nelka",
+    "name": "Studio Nelka",
+    "url": "https://studionelka.com/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/studio-nelka.md",
+    "path": "references/studies/studio-nelka.md",
+    "tags": [
+      "studio",
+      "dimensional-art",
+      "conceptual-hero"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "biotic",
+    "name": "Biotic",
+    "url": "https://biotic.org/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/biotic.md",
+    "path": "references/studies/biotic.md",
+    "tags": [
+      "science",
+      "monochrome",
+      "organic-metaphor"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "atalanta",
+    "name": "Atalanta",
+    "url": "https://www.atalanta.tech/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/atalanta.md",
+    "path": "references/studies/atalanta.md",
+    "tags": [
+      "technical",
+      "grid",
+      "editorial"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "aloud",
+    "name": "Aloud",
+    "url": "https://www.aloud.sh/",
+    "origin": "user",
+    "status": "visual-reviewed",
+    "study": "references/studies/aloud.md",
+    "path": "references/studies/aloud.md",
+    "tags": [
+      "product",
+      "workflow",
+      "dark",
+      "download"
+    ],
+    "reviewed_at": "2026-10-21",
+    "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  }
+]
