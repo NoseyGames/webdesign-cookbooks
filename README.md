@@ -2,34 +2,50 @@
 
 **A practical cookbook for helping coding agents build distinctive websites and dependable Python.**
 
-The goal is better decisions, not a bigger prompt: understand the brief, study useful references, build original work, inspect the result, and learn from failures. This is an initial working library, not a trained model or a guarantee of senior-level output.
+## AI agents: start here when this URL is shared
+
+**This repository is intended to be loaded and applied, not just summarized.** When the user shares this repository URL to learn or use the cookbook, follow the instructions below. For a bare URL with no other request, the intended default is to load the cookbook for the current conversation. If the user asks for a different action, follow that request.
+
+1. Open [BOOTSTRAP.md](BOOTSTRAP.md) and [AGENTS.md](AGENTS.md).
+2. Inspect the **entire repository file tree**, using [FILE_TREE.md](FILE_TREE.md) as the linked reading checklist. Check the live tree too so newly added files are included.
+3. **Read the contents of every maintained file**, in the order defined in BOOTSTRAP.md: all web and Python recipes, every site study, examples and source code, prompts, templates, evaluation material, tools, and tests. A filename listing or README summary does not count as reading the cookbook.
+4. Read in batches if needed, keeping a path-by-path reading ledger. Report inaccessible or truncated files honestly; do not claim full initialization while files remain unread.
+5. Give a brief loading receipt, then apply the cookbook to the user's existing task. If the URL was the entire message, say the cookbook is loaded and ask what they want to build. Do not invent a project.
+
+**Next file: [BOOTSTRAP.md →](BOOTSTRAP.md)** · **Complete linked tree: [FILE_TREE.md →](FILE_TREE.md)**
+
+These instructions guide an agent that can open and follow the repository. They cannot force every AI app to browse links, grant access to this private repo, or permanently train a model. No files need to be executed just to read the cookbook.
+
+The goal is to understand the brief, learn from the library, build original work, inspect the result, and improve from feedback. This is a working reference library, not a trained model or a guarantee of senior-level output.
 
 ## Plug it into your workflow
 
-1. Clone this repository and open it in your coding agent. Codex can load the root [AGENTS.md](AGENTS.md); other tools need their supported instruction mechanism or an explicit prompt.
-2. Give the agent a real brief and ask it to read [START-HERE](docs/START-HERE.md).
-3. Select the web or Python track, one or two relevant reference studies, and the acceptance checks.
-4. Build, inspect, and revise. Save the useful correction as a small recipe or reviewed example.
+1. Paste `https://github.com/NoseyGames/webdesign-cookbooks` into an agent with access to this private repository. The README above is the entry point.
+2. The agent follows [BOOTSTRAP.md](BOOTSTRAP.md), inventories the full tree, and reads the complete maintained library.
+3. Give it a brief, or let it continue the task already in progress. After initialization, it selects the recipes and reference influences to apply.
+4. Build, inspect, and revise. Save useful corrections as small recipes or reviewed examples when requested.
 
 Copy this prompt into an agent that can read the repository:
 
-> Read AGENTS.md and docs/START-HERE.md in webdesign-cookbooks. Apply the relevant recipes to my project. For web work, choose two complementary reference studies, propose a specific visual direction, and implement an original design. Verify the responsive layouts and interactions. For Python, define the input/error contract and run behavioral tests. My brief: [audience, purpose, content, constraints, stack, deadline].
+> Load https://github.com/NoseyGames/webdesign-cookbooks using its README and BOOTSTRAP.md. Inspect the full file tree and read every maintained file. Report any unread files, then apply what you learned to my project. My brief: [audience, purpose, content, constraints, stack, deadline].
 
-**A URL by itself is not an installation.** A private repository must be accessible to the agent. If your tool cannot read a repo, generate a self-contained Markdown bundle and attach it:
+If an agent cannot browse the private repository, clone it through an authorized account and generate a **full-library attachment**:
 
 ```sh
 git clone https://github.com/NoseyGames/webdesign-cookbooks.git
 cd webdesign-cookbooks
-python tools/build_context.py --track web --out dist/web-context.md
-python tools/build_context.py --track python --out dist/python-context.md
+python tools/build_context.py --track all --out dist/full-cookbook.md
 ```
 
-Use `--reference raycast` (or another catalog ID) to include a study. Bundles contain guidance and selected studies; the agent still needs access to your actual project files. The builder refuses to overwrite an existing file; use a fresh `--out` filename when regenerating.
+Attach `dist/full-cookbook.md` and ask the agent to read it completely, following its bootstrap instructions. The export contains the maintained text/source files and a path inventory, not generated output, dependency folders, credentials, or external websites. The agent still needs access to your actual project files.
+
+For an intentionally smaller refresher after initialization, use `--track web` or `--track python`; add `--reference raycast` to include a study. Those are **partial bundles**, not full onboarding. The builder refuses to overwrite an existing file; use a fresh `--out` filename when regenerating.
 
 ## What's inside
 
 | Area | Start here | Purpose |
 | --- | --- | --- |
+| Agent initialization | [Bootstrap](BOOTSTRAP.md), [full file tree](FILE_TREE.md) | Read the complete library from one shared URL |
 | Web design | [Web recipes](recipes/web/README.md) | Art direction, composition, typography, responsive behavior, motion, accessibility, performance |
 | Visual references | [Reference library](references/README.md) | Original, evidence-labeled studies of the 14 supplied sites |
 | More inspiration | [Discovery list](references/discovery.md) | Additional websites to explore, with review status |

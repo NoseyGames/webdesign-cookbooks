@@ -1,0 +1,84 @@
+# Full maintained file tree
+
+Inventory: **60 files**, updated 2026-10-21. Every file below is linked; read its complete contents during [bootstrap](BOOTSTRAP.md).
+
+This is a navigation snapshot, not proof of reading. Compare it with the live repository tree, include newly added maintained files, and report any unread or inaccessible paths. Excluded: Git internals, generated exports, dependencies, caches, credentials, and private holdouts.
+
+Read the entry points first, then follow the group order in BOOTSTRAP.md. When adding or removing a maintained file, update this index.
+
+- [.gitignore](.gitignore)
+- [AGENTS.md](AGENTS.md)
+- [BOOTSTRAP.md](BOOTSTRAP.md)
+- [FILE_TREE.md](FILE_TREE.md)
+- [LICENSE](LICENSE)
+- [README.md](README.md)
+- **docs/**
+  - [REFERENCE-WORKFLOW.md](docs/REFERENCE-WORKFLOW.md)
+  - [START-HERE.md](docs/START-HERE.md)
+- **evals/**
+  - [rubric.md](evals/rubric.md)
+  - [tasks.json](evals/tasks.json)
+- **examples/**
+  - **python/**
+    - [asset_budget.py](examples/python/asset_budget.py)
+    - [assets.sample.json](examples/python/assets.sample.json)
+    - [README.md](examples/python/README.md)
+  - **web/**
+    - [README.md](examples/web/README.md)
+    - **fieldwork/**
+      - [index.html](examples/web/fieldwork/index.html)
+      - [project-brief.txt](examples/web/fieldwork/project-brief.txt)
+      - [README.md](examples/web/fieldwork/README.md)
+      - [script.js](examples/web/fieldwork/script.js)
+      - [styles.css](examples/web/fieldwork/styles.css)
+- **prompts/**
+  - [analyze-reference.md](prompts/analyze-reference.md)
+  - [critique.md](prompts/critique.md)
+  - [kickoff.md](prompts/kickoff.md)
+- **recipes/**
+  - **python/**
+    - [01-validation-and-types.md](recipes/python/01-validation-and-types.md)
+    - [02-core-and-boundaries.md](recipes/python/02-core-and-boundaries.md)
+    - [03-errors-and-cli.md](recipes/python/03-errors-and-cli.md)
+    - [04-safe-io.md](recipes/python/04-safe-io.md)
+    - [05-behavioral-tests.md](recipes/python/05-behavioral-tests.md)
+    - [README.md](recipes/python/README.md)
+  - **web/**
+    - [01-art-direction.md](recipes/web/01-art-direction.md)
+    - [02-layout-and-typography.md](recipes/web/02-layout-and-typography.md)
+    - [03-responsive-composition.md](recipes/web/03-responsive-composition.md)
+    - [04-motion-and-interaction.md](recipes/web/04-motion-and-interaction.md)
+    - [05-accessible-progressive-ui.md](recipes/web/05-accessible-progressive-ui.md)
+    - [06-performance-and-review.md](recipes/web/06-performance-and-review.md)
+    - [README.md](recipes/web/README.md)
+- **references/**
+  - [catalog.json](references/catalog.json)
+  - [discovery.md](references/discovery.md)
+  - [README.md](references/README.md)
+  - **studies/**
+    - [aethr.md](references/studies/aethr.md)
+    - [aloud.md](references/studies/aloud.md)
+    - [ardor.md](references/studies/ardor.md)
+    - [atalanta.md](references/studies/atalanta.md)
+    - [biotic.md](references/studies/biotic.md)
+    - [colmez.md](references/studies/colmez.md)
+    - [drool.md](references/studies/drool.md)
+    - [heist.md](references/studies/heist.md)
+    - [nikola-radeski.md](references/studies/nikola-radeski.md)
+    - [odoo-design.md](references/studies/odoo-design.md)
+    - [onearth.md](references/studies/onearth.md)
+    - [raycast.md](references/studies/raycast.md)
+    - [square.md](references/studies/square.md)
+    - [studio-nelka.md](references/studies/studio-nelka.md)
+- **templates/**
+  - [design-brief.md](templates/design-brief.md)
+  - [evaluation-record.md](templates/evaluation-record.md)
+  - [site-study.md](templates/site-study.md)
+- **tests/**
+  - [test_python_example.py](tests/test_python_example.py)
+  - [test_tools.py](tests/test_tools.py)
+- **tools/**
+  - [build_context.py](tools/build_context.py)
+  - [validate_repo.py](tools/validate_repo.py)
+- **training/**
+  - [README.md](training/README.md)

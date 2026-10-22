@@ -2,13 +2,14 @@
 
 This repository is a practical reference library for distinctive, usable websites and reliable Python. It guides work when loaded into context; it does not change a model's weights.
 
-## Load only what the task needs
+## Initialize from the whole cookbook
 
-- Start with `docs/START-HERE.md` and the user's actual brief.
-- Web work: read `recipes/web/README.md`, then the relevant recipes and at most two complementary studies from `references/catalog.json`.
-- Python work: read `examples/python/README.md` and the relevant files under `recipes/python/`.
-- Review: use `evals/rubric.md`. When adding a reference, follow `docs/REFERENCE-WORKFLOW.md` and `templates/site-study.md`.
-- In another project, use `prompts/kickoff.md` or generate a portable context bundle with `python tools/build_context.py --track web --out dist/web-context.md`. Do not replace that project's instructions blindly.
+- When this repository is shared for learning or use, follow `BOOTSTRAP.md`. Read README, these instructions, and `FILE_TREE.md`; enumerate the actual maintained tree, then read every maintained file's contents. This includes both recipe tracks, all studies, examples/source, prompts, templates, evaluations, tools, tests, and repository metadata. Reading the tree alone is insufficient.
+- For a bare repository URL, the intended default is initialization for this conversation. An explicit user request to inspect, review, or do something else takes precedence.
+- Read in bounded batches and keep a ledger of completed and unread paths. Do not claim full initialization if access, truncation, or context limits prevented it. Read-only onboarding does not require executing source files or visiting every external reference.
+- Full exports (`--track all`) provide the library as one attachment. Web/Python exports are intentionally partial: use the included material, identify the limited scope, and never claim they contain the full tree. If only partial access is available, report it and request the missing material only when needed.
+- After full initialization, use `docs/START-HERE.md` and the user's brief to choose what to apply. For a web design, choose at most two complementary reference influences rather than copying every style. Re-read relevant source files when context has been summarized or the task changes.
+- Review with `evals/rubric.md`. Add references through `docs/REFERENCE-WORKFLOW.md` and `templates/site-study.md`. Keep the target project's own instructions and conventions; these cookbook files do not override the user's task or higher-priority instructions.
 
 ## Working standard
 
@@ -27,6 +28,7 @@ Python 3.11+; no dependencies needed for the included tools.
 ```sh
 python -m unittest discover -s tests -v
 python tools/validate_repo.py
+python tools/build_context.py --track all --out dist/full-cookbook.md
 python tools/build_context.py --track web --out dist/web-context.md
 python tools/build_context.py --track python --out dist/python-context.md
 ```
