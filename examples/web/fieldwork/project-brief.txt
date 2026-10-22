@@ -1,0 +1,30 @@
+YOUR NEXT PROJECT
+=================
+
+1. What are you making, and who is it for?
+
+
+2. What should someone understand or do after visiting the website?
+
+
+3. What problem are you trying to solve?
+
+
+4. Which content and assets do you already have permission to use?
+
+
+5. Share three references. Explain one specific thing you appreciate in each.
+
+
+6. What must the website do? Include forms, integrations, and content editing.
+
+
+7. What constraints matter? Think about timeline, budget, accessibility,
+   languages, existing technology, performance, and maintenance.
+
+
+8. How will you know the project succeeded?
+
+
+This template is part of webdesign-cookbooks. Fieldwork is a fictional studio.
+Nothing is submitted or collected by the example website.
