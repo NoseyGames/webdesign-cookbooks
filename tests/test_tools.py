@@ -81,6 +81,8 @@ class RepositoryFixture(unittest.TestCase):
 class BuildContextTests(RepositoryFixture):
     def test_selected_track_only_and_deterministic_recipe_order(self) -> None:
         result = build_context.build("web", [], self.root)
+        self.assertIn("Partial bundle", result)
+        self.assertIn("does not satisfy full repository bootstrap", result)
         self.assertIn("Agent guidance", result)
         self.assertIn("Starting guidance", result)
         self.assertIn("Evaluation rubric", result)
@@ -90,6 +92,73 @@ class BuildContextTests(RepositoryFixture):
         python_result = build_context.build("python", [], self.root)
         self.assertIn("PYTHON_TYPES", python_result)
         self.assertNotIn("WEB_TYPE", python_result)
+
+    def test_all_includes_both_tracks_examples_and_bootstrap_inventory_in_order(self) -> None:
+        for relative, content in {
+            "README.md": "ROOT_README",
+            "BOOTSTRAP.md": "BOOTSTRAP_GUIDANCE",
+            "FILE_TREE.md": "TREE_GUIDANCE",
+            ".gitignore": "dist/",
+            "examples/web/index.html": "<main>WEB_EXAMPLE</main>",
+            "examples/python/app.py": "print('PYTHON_EXAMPLE')",
+            "tests/check.py": "TEST_SOURCE",
+        }.items():
+            self.write(relative, content)
+        result = build_context.build("all", [], self.root)
+        included = [line.removeprefix("## Source: ") for line in result.splitlines() if line.startswith("## Source: ")]
+        expected = list(build_context.BOOTSTRAP_ORDER)
+        self.assertEqual(included[:len(expected)], expected)
+        self.assertEqual(included[len(expected):], sorted(included[len(expected):]))
+        for marker in ("WEB_TYPE", "PYTHON_TYPES", "ALPHA_STUDY", "BETA_STUDY", "WEB_EXAMPLE", "PYTHON_EXAMPLE", "TEST_SOURCE"):
+            self.assertIn(marker, result)
+        inventory = result.split("## Included file inventory\n\n", 1)[1].split("\n---", 1)[0]
+        self.assertEqual([line[3:-1] for line in inventory.splitlines() if line.startswith("- `")], included)
+        self.assertIn(f"Includes {len(included)} maintained", result)
+        self.assertEqual(build_context.build("all", [], self.root), result)
+
+    def test_all_excludes_outputs_environments_secrets_holdouts_and_binary(self) -> None:
+        for relative in (
+            "dist/previous.md", ".git/config", "__pycache__/cache.txt",
+            ".venv/lib/private.txt", "node_modules/package/index.js", "venv/local.txt",
+            "examples/.env.local", ".env.example", "credentials/account.json",
+            "secrets.json", ".credentials", "training/holdouts/private.md",
+            "training/private_holdout.json", ".aws/config", "key.pem",
+            ".pytest_cache/state.txt",
+        ):
+            self.write(relative, "DO_NOT_EXPORT")
+        (self.root / "binary.bin").write_bytes(b"\xff\xfe")
+        (self.root / "null.bin").write_bytes(b"binary\x00content")
+        result = build_context.build("all", [], self.root)
+        self.assertNotIn("DO_NOT_EXPORT", result)
+        self.assertNotIn("## Source: binary.bin", result)
+        self.assertNotIn("## Source: null.bin", result)
+        self.assertIn("WEB_TYPE", result)
+
+    def test_all_rejects_reference_filter(self) -> None:
+        with self.assertRaisesRegex(ValueError, "all studies are already included"):
+            build_context.build("all", ["alpha"], self.root)
+
+    def test_all_rejects_file_symlink_escaping_repository(self) -> None:
+        outside = self.parent / "outside.md"
+        outside.write_text("OUTSIDE", encoding="utf-8")
+        try:
+            (self.root / "linked.md").symlink_to(outside)
+        except (OSError, NotImplementedError) as exc:
+            self.skipTest(f"Symlink creation unavailable: {exc}")
+        with self.assertRaisesRegex(ValueError, "escapes repository"):
+            build_context.build("all", [], self.root)
+
+    def test_all_does_not_traverse_directory_symlinks(self) -> None:
+        outside = self.parent / "external"
+        outside.mkdir()
+        (outside / "private.md").write_text("OUTSIDE", encoding="utf-8")
+        try:
+            (self.root / "external").symlink_to(outside, target_is_directory=True)
+        except (OSError, NotImplementedError) as exc:
+            self.skipTest(f"Symlink creation unavailable: {exc}")
+        result = build_context.build("all", [], self.root)
+        self.assertNotIn("OUTSIDE", result)
+        self.assertNotIn("## Source: external/", result)
 
     def test_repeated_reference_ids_are_deduplicated_in_request_order(self) -> None:
         result = build_context.build("web", ["beta", "alpha", "beta"], self.root)
@@ -142,6 +211,19 @@ class BuildContextTests(RepositoryFixture):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("PYTHON_TYPES", output.read_text(encoding="utf-8"))
         self.assertNotIn("WEB_TYPE", output.read_text(encoding="utf-8"))
+
+    def test_cli_all_exports_complete_context_and_refuses_reference_filter(self) -> None:
+        output = self.root / "dist" / "context.md"
+        result = self.cli("build_context.py", "--track", "all", "--out", str(output))
+        self.assertEqual(result.returncode, 0, result.stderr)
+        content = output.read_text(encoding="utf-8")
+        self.assertIn("WEB_TYPE", content)
+        self.assertIn("PYTHON_TYPES", content)
+        self.assertIn("ALPHA_STUDY", content)
+        self.assertNotIn("## Source: dist/context.md", content)
+        rejected = self.cli("build_context.py", "--track", "all", "--reference", "alpha")
+        self.assertEqual(rejected.returncode, 2)
+        self.assertIn("all studies are already included", rejected.stderr)
 
 
 class ValidateRepositoryTests(RepositoryFixture):
