@@ -226,5 +226,209 @@
     ],
     "reviewed_at": "2026-10-21",
     "evidence_scope": "Desktop browser view plus available page content; not a complete accessibility, responsive, motion, or performance audit."
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "url": "https://linear.app/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/linear.md",
+    "path": "references/studies/linear.md",
+    "tags": [
+      "product",
+      "dark",
+      "typography",
+      "interface-preview"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Fresh desktop opening view and page content; no full responsive, accessibility, motion, or performance audit."
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "url": "https://stripe.com/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/stripe.md",
+    "path": "references/studies/stripe.md",
+    "tags": [
+      "product",
+      "color",
+      "information-architecture",
+      "commerce"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Fresh desktop opening view and page content; text fetch may differ by locale. No full responsive, accessibility, motion, or performance audit."
+  },
+  {
+    "id": "resend",
+    "name": "Resend",
+    "url": "https://resend.com/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/resend.md",
+    "path": "references/studies/resend.md",
+    "tags": [
+      "developer",
+      "serif",
+      "dark",
+      "code-examples"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Fresh desktop view, page content, and one code-language switch; no full responsive, accessibility, motion, or performance audit."
+  },
+  {
+    "id": "studio-lenzing",
+    "name": "Studio Lenzing",
+    "url": "https://www.studiolenzing.com/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/studio-lenzing.md",
+    "path": "references/studies/studio-lenzing.md",
+    "tags": [
+      "studio",
+      "asymmetry",
+      "whitespace",
+      "project-media"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Fresh desktop opening and media frame observations plus page content; no full responsive, accessibility, motion, or performance audit."
+  },
+  {
+    "id": "ordinary-folk",
+    "name": "Ordinary Folk",
+    "url": "https://www.ordinaryfolk.co/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/ordinary-folk.md",
+    "path": "references/studies/ordinary-folk.md",
+    "tags": [
+      "studio",
+      "typography",
+      "motion",
+      "reel"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Desktop opening observed 2026-10-21, with 2026-10-22 page-content recheck; no full responsive, accessibility, motion, or performance audit."
+  },
+  {
+    "id": "lusion",
+    "name": "Lusion",
+    "url": "https://lusion.co/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/lusion.md",
+    "path": "references/studies/lusion.md",
+    "tags": [
+      "studio",
+      "3d",
+      "immersive",
+      "bounded-media"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Desktop opening observed 2026-10-21, with 2026-10-22 page-content recheck; no full responsive, accessibility, motion, or performance audit."
+  },
+  {
+    "id": "active-theory",
+    "name": "Active Theory",
+    "url": "https://activetheory.net/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/active-theory.md",
+    "path": "references/studies/active-theory.md",
+    "tags": [
+      "studio",
+      "3d",
+      "immersive",
+      "atmosphere"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Desktop opening observed 2026-10-21; 2026-10-22 text recheck returned a JavaScript notice. No full responsive, accessibility, motion, or performance audit."
+  },
+  {
+    "id": "instrument",
+    "name": "Instrument",
+    "url": "https://www.instrument.com/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/instrument.md",
+    "path": "references/studies/instrument.md",
+    "tags": [
+      "studio",
+      "oversized-type",
+      "media",
+      "portfolio"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Desktop opening observed 2026-10-21, partly obscured by consent UI, with 2026-10-22 page-content recheck; no full responsive, accessibility, motion, or performance audit."
+  },
+  {
+    "id": "bruno-simon",
+    "name": "Bruno Simon",
+    "url": "https://bruno-simon.com/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/bruno-simon.md",
+    "path": "references/studies/bruno-simon.md",
+    "tags": [
+      "portfolio",
+      "3d",
+      "onboarding",
+      "spatial-navigation"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Fresh desktop entry and post-start scene plus available page content; driving, full navigation, responsive behavior, accessibility, and performance not audited."
+  },
+  {
+    "id": "teenage-engineering",
+    "name": "teenage engineering",
+    "url": "https://teenage.engineering/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/teenage-engineering.md",
+    "path": "references/studies/teenage-engineering.md",
+    "tags": [
+      "commerce",
+      "industrial-design",
+      "product-imagery",
+      "navigation"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Fresh desktop campaign view and page content; browser and text fetch showed different campaigns. No full responsive, accessibility, motion, or performance audit."
+  },
+  {
+    "id": "aesop",
+    "name": "Aesop",
+    "url": "https://www.aesop.com/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/aesop.md",
+    "path": "references/studies/aesop.md",
+    "tags": [
+      "commerce",
+      "editorial",
+      "product-presentation",
+      "typography"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Fresh desktop hero and product shelf plus page content; /us/ redirected to root and hero video did not render in the observed frame. No complete interaction or responsive audit."
+  },
+  {
+    "id": "pentagram",
+    "name": "Pentagram",
+    "url": "https://www.pentagram.com/",
+    "origin": "discovered",
+    "status": "visual-reviewed",
+    "study": "references/studies/pentagram.md",
+    "path": "references/studies/pentagram.md",
+    "tags": [
+      "portfolio",
+      "project-storytelling",
+      "carousel",
+      "editorial"
+    ],
+    "reviewed_at": "2026-10-22",
+    "evidence_scope": "Fresh desktop homepage frames, page content, and one carousel selection; no full responsive, accessibility, motion, or performance audit."
   }
 ]

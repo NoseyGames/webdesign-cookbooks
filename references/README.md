@@ -1,8 +1,25 @@
 # Reference library
 
-Choose a reference for a particular design decision, then translate that decision into original work. Start with one or two studies; importing every visual effect produces a weaker direction.
+**26 website studies:** the original 14 user-supplied references plus 12 discovered examples. During [bootstrap](../BOOTSTRAP.md), read the full library. When building a project, select one or two complementary influences for specific decisions and translate them into original work.
 
-These 14 user-supplied sites were inspected on **2026-10-21 (America/Los_Angeles)**. Every study distinguishes what was observed, interpretation, and a proposed implementation. **Visual-reviewed means a desktop view was inspected, not that the site passed a complete responsive, accessibility, motion, or performance audit.** Each study states its narrower scope. No source code or site assets are included.
+The original studies were reviewed on **2026-10-21**. The additions were researched on **2026-10-22 (America/Los_Angeles)**; some retain desktop observations from October 21 alongside a fresh content check. Every study separates observations, interpretation, and proposed implementation. **Visual-reviewed means a desktop view was inspected; it does not mean the site passed a responsive, accessibility, motion, or performance audit.** Read the individual evidence scope. No third-party screenshots, source code, or site assets are included.
+
+## New examples
+
+| Study | Design lesson to practice |
+| --- | --- |
+| [Linear](studies/linear.md) | Use typography, spacing, and a detailed product preview to make a restrained interface specific. |
+| [Stripe](studies/stripe.md) | Balance expressive color with a structured business proposition and product routes. |
+| [Resend](studies/resend.md) | Combine editorial typography with useful developer examples and clear documentation paths. |
+| [Studio Lenzing](studies/studio-lenzing.md) | Use asymmetric alignment, whitespace, and project imagery to establish studio character. |
+| [Ordinary Folk](studies/ordinary-folk.md) | Turn conversational type and a reel entry point into a deliberate composition. |
+| [Lusion](studies/lusion.md) | Give dimensional art a bounded stage while preserving straightforward navigation. |
+| [Active Theory](studies/active-theory.md) | Build atmosphere around one sculptural centerpiece, with a usable fallback. |
+| [Instrument](studies/instrument.md) | Contrast oversized identity with a strong media block and compact navigation. |
+| [Bruno Simon](studies/bruno-simon.md) | Treat an interactive portfolio as a navigable world with explicit onboarding. |
+| [teenage engineering](studies/teenage-engineering.md) | Give a physical product a strong visual presence and distinctive information hierarchy. |
+| [Aesop](studies/aesop.md) | Connect editorial storytelling to calm, consistent product presentation. |
+| [Pentagram](studies/pentagram.md) | Make varied project work the main attraction while keeping project context readable. |
 
 ## Explain a product or workflow
 
@@ -45,12 +62,22 @@ These 14 user-supplied sites were inspected on **2026-10-21 (America/Los_Angeles
 
 OnEarth is a website template. Its example impact totals, donations, dates, and people are not verified organizational results. Across all studies, displayed testimonials and business claims remain claims of their source sites.
 
+## Choose a useful pairing
+
+| Brief | Complementary influences | Constraint to preserve |
+| --- | --- | --- |
+| Developer product | Linear's product specificity + Resend's example-led education | Keep the example readable and actionable at narrow widths. |
+| Creative studio | Ordinary Folk's typographic composition + Pentagram's project context | Make real work and contact routes easy to find. |
+| Physical product | teenage engineering's object scale + Aesop's product information rhythm | Keep product names, details, and actions readable without media. |
+| Experimental portfolio | Lusion's bounded visual stage + Bruno Simon's onboarding | Provide direct links and a lightweight alternative to the experience. |
+| Technical service | Aethr's editorial composition + Aloud's workflow explanation | Explain the service before introducing decorative complexity. |
+
+These are suggested exercises, not instructions to combine the source sites' branding or assets. Each new study includes its own original exercise and acceptance checks.
+
 ## Use and expand the library
 
-- For a software landing page, pair **Aethr's composition** with **Aloud's workflow explanation**; make your own visual identity and content.
-- For a creative service, pair **Drool's coherent illustration language** with **Odoo's transition into project evidence**.
-- Use the [catalog](catalog.json) for IDs and metadata, or include a chosen study with `python tools/build_context.py --track web --reference aloud --out dist/aloud-context.md` from the repository root.
-- Explore [additional discovery candidates](discovery.md). Their evidence labels matter; a discovery link is not automatically an inspected case study.
-- Add a reference using the [workflow](../docs/REFERENCE-WORKFLOW.md), [study template](../templates/site-study.md), and [analysis prompt](../prompts/analyze-reference.md).
+- Use the [catalog](catalog.json) for IDs and metadata. For a partial refresher after initialization: `python tools/build_context.py --track web --reference aesop --out dist/aesop-context.md`.
+- Use the [discovery guide](discovery.md) to explore the expanded collection and choose what to investigate next.
+- Add a reference using the [workflow](../docs/REFERENCE-WORKFLOW.md), [study template](../templates/site-study.md), and [analysis prompt](../prompts/analyze-reference.md). Update the full file tree too.
 
 Revisit the live source before relying on a time-sensitive detail. Preserve attribution and rights; reuse principles, not another site's branding, copy, imagery, or unverified claims.
