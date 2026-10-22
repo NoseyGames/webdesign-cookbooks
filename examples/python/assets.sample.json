@@ -1,0 +1,9 @@
+{
+  "budget_bytes": 250000,
+  "assets": [
+    {"path": "assets/app.js", "kind": "script", "bytes": 62000},
+    {"path": "assets/site.css", "kind": "style", "bytes": 18000},
+    {"path": "assets/hero.avif", "kind": "image", "bytes": 104000},
+    {"path": "assets/body.woff2", "kind": "font", "bytes": 32000}
+  ]
+}
