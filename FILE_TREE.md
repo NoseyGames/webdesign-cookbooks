@@ -1,6 +1,6 @@
 # Full maintained file tree
 
-Inventory: **60 files**, updated 2026-10-21. Every file below is linked; read its complete contents during [bootstrap](BOOTSTRAP.md).
+Inventory: **72 files**, updated 2026-10-22. Every file below is linked; read its complete contents during [bootstrap](BOOTSTRAP.md).
 
 This is a navigation snapshot, not proof of reading. Compare it with the live repository tree, include newly added maintained files, and report any unread or inaccessible paths. Excluded: Git internals, generated exports, dependencies, caches, credentials, and private holdouts.
 
@@ -56,20 +56,32 @@ Read the entry points first, then follow the group order in BOOTSTRAP.md. When a
   - [discovery.md](references/discovery.md)
   - [README.md](references/README.md)
   - **studies/**
+    - [active-theory.md](references/studies/active-theory.md)
+    - [aesop.md](references/studies/aesop.md)
     - [aethr.md](references/studies/aethr.md)
     - [aloud.md](references/studies/aloud.md)
     - [ardor.md](references/studies/ardor.md)
     - [atalanta.md](references/studies/atalanta.md)
     - [biotic.md](references/studies/biotic.md)
+    - [bruno-simon.md](references/studies/bruno-simon.md)
     - [colmez.md](references/studies/colmez.md)
     - [drool.md](references/studies/drool.md)
     - [heist.md](references/studies/heist.md)
+    - [instrument.md](references/studies/instrument.md)
+    - [linear.md](references/studies/linear.md)
+    - [lusion.md](references/studies/lusion.md)
     - [nikola-radeski.md](references/studies/nikola-radeski.md)
     - [odoo-design.md](references/studies/odoo-design.md)
     - [onearth.md](references/studies/onearth.md)
+    - [ordinary-folk.md](references/studies/ordinary-folk.md)
+    - [pentagram.md](references/studies/pentagram.md)
     - [raycast.md](references/studies/raycast.md)
+    - [resend.md](references/studies/resend.md)
     - [square.md](references/studies/square.md)
+    - [stripe.md](references/studies/stripe.md)
+    - [studio-lenzing.md](references/studies/studio-lenzing.md)
     - [studio-nelka.md](references/studies/studio-nelka.md)
+    - [teenage-engineering.md](references/studies/teenage-engineering.md)
 - **templates/**
   - [design-brief.md](templates/design-brief.md)
   - [evaluation-record.md](templates/evaluation-record.md)

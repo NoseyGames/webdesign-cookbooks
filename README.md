@@ -47,8 +47,8 @@ For an intentionally smaller refresher after initialization, use `--track web` o
 | --- | --- | --- |
 | Agent initialization | [Bootstrap](BOOTSTRAP.md), [full file tree](FILE_TREE.md) | Read the complete library from one shared URL |
 | Web design | [Web recipes](recipes/web/README.md) | Art direction, composition, typography, responsive behavior, motion, accessibility, performance |
-| Visual references | [Reference library](references/README.md) | Original, evidence-labeled studies of the 14 supplied sites |
-| More inspiration | [Discovery list](references/discovery.md) | Additional websites to explore, with review status |
+| Visual references | [Reference library](references/README.md) | 26 evidence-labeled studies: the 14 supplied sites plus 12 discoveries |
+| More inspiration | [Discovery guide](references/discovery.md) | Explore the added references by design lesson |
 | Working web example | [Example](examples/web/README.md) | Original HTML, CSS, and JavaScript with no build step |
 | Python | [Example and recipes](examples/python/README.md) | Typed boundaries, predictable errors, safe I/O, meaningful tests |
 | Agent prompts | [Kickoff](prompts/kickoff.md), [critique](prompts/critique.md), [new reference](prompts/analyze-reference.md) | Repeatable task workflows |
