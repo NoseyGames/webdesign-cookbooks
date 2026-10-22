@@ -1,6 +1,6 @@
 # Build with the cookbook
 
-Read AGENTS.md and docs/START-HERE.md. Use the relevant track only.
+Load this cookbook through README.md and BOOTSTRAP.md. Inspect the full file tree and read every maintained file before the first implementation. Give a brief loading receipt with actual coverage and unread paths. If only a partial context bundle is available, identify that limitation. After initialization, use docs/START-HERE.md to choose the relevant guidance for this task.
 
 My project:
 - Audience and primary action: [fill in]
