@@ -1,6 +1,6 @@
 # Full maintained file tree
 
-Inventory: **72 files**, updated 2026-10-22. Every file below is linked; read its complete contents during [bootstrap](BOOTSTRAP.md).
+Inventory: **91 files**, updated 2026-10-23. Every file below is linked; read its complete contents during [bootstrap](BOOTSTRAP.md).
 
 This is a navigation snapshot, not proof of reading. Compare it with the live repository tree, include newly added maintained files, and report any unread or inaccessible paths. Excluded: Git internals, generated exports, dependencies, caches, credentials, and private holdouts.
 
@@ -24,13 +24,36 @@ Read the entry points first, then follow the group order in BOOTSTRAP.md. When a
     - [assets.sample.json](examples/python/assets.sample.json)
     - [README.md](examples/python/README.md)
   - **web/**
+    - [index.html](examples/web/index.html)
     - [README.md](examples/web/README.md)
+    - [styles.css](examples/web/styles.css)
+    - [VERIFICATION.md](examples/web/VERIFICATION.md)
+    - **common-ground/**
+      - [index.html](examples/web/common-ground/index.html)
+      - [README.md](examples/web/common-ground/README.md)
+      - [script.js](examples/web/common-ground/script.js)
+      - [styles.css](examples/web/common-ground/styles.css)
     - **fieldwork/**
       - [index.html](examples/web/fieldwork/index.html)
       - [project-brief.txt](examples/web/fieldwork/project-brief.txt)
       - [README.md](examples/web/fieldwork/README.md)
       - [script.js](examples/web/fieldwork/script.js)
       - [styles.css](examples/web/fieldwork/styles.css)
+    - **forma/**
+      - [index.html](examples/web/forma/index.html)
+      - [README.md](examples/web/forma/README.md)
+      - [script.js](examples/web/forma/script.js)
+      - [styles.css](examples/web/forma/styles.css)
+    - **orbit/**
+      - [index.html](examples/web/orbit/index.html)
+      - [README.md](examples/web/orbit/README.md)
+      - [script.js](examples/web/orbit/script.js)
+      - [styles.css](examples/web/orbit/styles.css)
+    - **signal/**
+      - [index.html](examples/web/signal/index.html)
+      - [README.md](examples/web/signal/README.md)
+      - [script.js](examples/web/signal/script.js)
+      - [styles.css](examples/web/signal/styles.css)
 - **prompts/**
   - [analyze-reference.md](prompts/analyze-reference.md)
   - [critique.md](prompts/critique.md)
