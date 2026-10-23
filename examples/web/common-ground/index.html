@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Common Ground: an original fictional creative practice and a working example of expressive, accessible portfolio design.">
+  <title>Common Ground — Ideas made public</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header shell">
+    <a class="wordmark" href="#main" aria-label="Common Ground home">COMMON<br>GROUND<span aria-hidden="true">✳</span></a>
+    <p class="header-note">Independent minds.<br>Shared ambition.</p>
+    <nav aria-label="Main navigation">
+      <a href="#selected-work">Work <span aria-hidden="true">↘</span></a>
+      <a href="#practice">Practice <span aria-hidden="true">↘</span></a>
+      <a href="#inquiry">Start something <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-topline"><span>Ideas made public.</span><span>Design practice / Concept edition 01</span></div>
+      <!-- A single heading retains its reading order; spans only provide desktop rhythm. -->
+      <h1 id="hero-title"><span>Good ideas.</span><span class="line-two">Shared</span><span class="line-three">widely.<svg class="hero-mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0v100M0 50h100M15 15l70 70M15 85l70-70"/></svg></span></h1>
+      <div class="hero-bottom">
+        <a class="text-link" href="#selected-work">Explore the work <span aria-hidden="true">↓</span></a>
+        <p>We turn thoughtful ideas into identities, digital places, and moving stories. Built to bring people together.</p>
+      </div>
+    </section>
+
+    <section class="work-section shell" id="selected-work" aria-labelledby="work-title">
+      <div class="section-heading"><h2 id="work-title">Selected work</h2><p>Six invented projects. One shared approach.</p></div>
+      <!-- The complete portfolio is the baseline. JS reveals these controls only after wiring them. -->
+      <div class="filter-bar" id="work-filters" hidden>
+        <div class="filter-buttons" role="group" aria-label="Filter work by discipline">
+          <button type="button" data-filter="all" aria-pressed="true" aria-controls="work-list">All <span data-count>6</span></button>
+          <button type="button" data-filter="identity" aria-pressed="false" aria-controls="work-list">Identity <span data-count>3</span></button>
+          <button type="button" data-filter="digital" aria-pressed="false" aria-controls="work-list">Digital <span data-count>3</span></button>
+          <button type="button" data-filter="motion" aria-pressed="false" aria-controls="work-list">Motion <span data-count>3</span></button>
+        </div>
+        <p id="result-count" role="status" aria-live="polite" aria-atomic="true">Showing all 6 projects.</p>
+      </div>
+
+      <div class="work-list" id="work-list">
+        <article class="project project-wide" data-disciplines="identity digital" aria-labelledby="project-afterhours">
+          <div class="project-art art-afterhours" aria-hidden="true">
+            <svg viewBox="0 0 760 570" preserveAspectRatio="xMidYMid slice" focusable="false"><path d="M0 0h760v570H0z" fill="#ff664f"/><path d="M150 65h270v200H150zM150 305h270v200H150z" fill="#181818"/><circle cx="420" cy="285" r="215" fill="#ffe45b"/><path d="M420 70a215 215 0 0 1 0 430z" fill="#ff664f"/><circle cx="420" cy="285" r="78" fill="#181818"/><path d="M600 85v100m-50-50h100" stroke="#181818" stroke-width="16"/></svg>
+            <span class="art-label">AFTER<br>HOURS</span><span class="art-caption">More room for a good night.</span>
+          </div>
+          <div class="project-heading"><h3 id="project-afterhours">After Hours</h3><span>01</span></div>
+          <p class="project-description">A neighborhood cinema with a life beyond the last frame.</p>
+          <p class="project-meta">Identity / Digital · Cultural spaces</p>
+          <details><summary>Read case notes<span class="sr-only">: After Hours</span></summary><div class="case-notes"><p><strong>Challenge.</strong> Give a fictional independent cinema a clear way to promote films, talks, and late-night gatherings.</p><p><strong>Decision.</strong> A cropped circular symbol suggests both a projector and a meeting place. Event dates remain live text, with a consistent booking route.</p><p><strong>Concept outcome.</strong> An adaptable identity and proposed event index. This is invented work; attendance and booking results have not been measured.</p></div></details>
+        </article>
+
+        <article class="project project-narrow" data-disciplines="identity motion" aria-labelledby="project-good-loop">
+          <div class="project-art art-loop" aria-hidden="true">
+            <svg viewBox="0 0 600 670" preserveAspectRatio="xMidYMid slice" focusable="false"><path fill="#f9e445" d="M0 0h600v670H0z"/><path d="M140 185h140a105 105 0 0 1 0 210H140a105 105 0 0 1 0-210zm180 110h140a105 105 0 0 1 0 210H320a105 105 0 0 1 0-210z" fill="none" stroke="#202020" stroke-width="62"/><path d="M420 18v95m-47-47h94" stroke="#202020" stroke-width="15"/></svg>
+            <span class="loop-label">good<br>loop.</span><span class="art-caption">Keep good things going.</span>
+          </div>
+          <div class="project-heading"><h3 id="project-good-loop">Good Loop</h3><span>02</span></div>
+          <p class="project-description">Repair, reuse, repeat. A fresh identity for a local repair collective.</p>
+          <p class="project-meta">Identity / Motion · Circular living</p>
+          <details><summary>Read case notes<span class="sr-only">: Good Loop</span></summary><div class="case-notes"><p><strong>Challenge.</strong> Make a fictional repair service feel welcoming to people who have never fixed anything.</p><p><strong>Decision.</strong> Interlocking loops express exchange. A three-step repair story would animate only on request and always have a static equivalent.</p><p><strong>Concept outcome.</strong> A visual identity and motion direction, represented here by an original still. No video, real service, or customer outcome is implied.</p></div></details>
+        </article>
+
+        <article class="project project-narrow" data-disciplines="digital" aria-labelledby="project-open-index">
+          <div class="project-art art-index" aria-hidden="true">
+            <div class="index-paper"><span class="index-tiny">A public collection of useful ideas.</span><strong>OPEN<br>INDEX<span>↗</span></strong><div class="index-rule">01 — Making room</div><div class="index-rule">02 — Finding common ground</div><div class="index-rule">03 — What comes next</div><span class="index-tiny">Read something. Make something.</span></div>
+          </div>
+          <div class="project-heading"><h3 id="project-open-index">Open Index</h3><span>03</span></div>
+          <p class="project-description">An editorial home for ideas that deserve a second life.</p>
+          <p class="project-meta">Digital · Independent publishing</p>
+          <details><summary>Read case notes<span class="sr-only">: Open Index</span></summary><div class="case-notes"><p><strong>Challenge.</strong> Help readers find useful essays in an invented independent publication.</p><p><strong>Decision.</strong> Use a clear typographic index, descriptive article titles, and persistent topic labels. Reading comes before decoration.</p><p><strong>Concept outcome.</strong> A proposed editorial system. The miniature cover above is an illustration, not a working article browser; this page's project filters are the live example.</p></div></details>
+        </article>
+
+        <article class="project project-wide" data-disciplines="motion" aria-labelledby="project-common-frequency">
+          <div class="project-art art-frequency" aria-hidden="true">
+            <svg viewBox="0 0 760 570" preserveAspectRatio="xMidYMid slice" focusable="false"><path fill="#bfd0ff" d="M0 0h760v570H0z"/><g fill="none" stroke="#1a37dc" stroke-width="33"><path d="M-80 270c100-330 210 330 310 0S440 600 540 270s210 330 310 0"/><path d="M-80 370c100-330 210 330 310 0S440 700 540 370s210 330 310 0"/></g><circle cx="658" cy="100" r="43" fill="#ff674f"/></svg>
+            <span class="frequency-label">COMMON<br>FREQUENCY</span><span class="art-caption">Many voices. A new rhythm.</span>
+          </div>
+          <div class="project-heading"><h3 id="project-common-frequency">Common Frequency</h3><span>04</span></div>
+          <p class="project-description">A visual rhythm for a community radio festival.</p>
+          <p class="project-meta">Motion · Arts &amp; sound</p>
+          <details><summary>Read case notes<span class="sr-only">: Common Frequency</span></summary><div class="case-notes"><p><strong>Challenge.</strong> Connect a fictional festival's different voices without giving each one a separate visual system.</p><p><strong>Decision.</strong> Repeated wave geometry creates a shared rhythm. Any future animation would accompany the program rather than delay access to it.</p><p><strong>Concept outcome.</strong> An original poster and motion storyboard direction. This demo intentionally uses a still and makes no claim about a produced film or audience response.</p></div></details>
+        </article>
+
+        <article class="project project-wide" data-disciplines="identity" aria-labelledby="project-table-talk">
+          <div class="project-art art-table" aria-hidden="true">
+            <svg viewBox="0 0 760 570" preserveAspectRatio="xMidYMid slice" focusable="false"><path fill="#d5e8cf" d="M0 0h760v570H0z"/><circle cx="380" cy="285" r="190" fill="#ff674f"/><g fill="#183a27"><path d="M200 40h80v130h-80zM480 40h80v130h-80zM200 400h80v130h-80zM480 400h80v130h-80zM95 190h130v80H95zM535 300h130v80H535z"/></g><circle cx="380" cy="285" r="98" fill="#d5e8cf"/></svg>
+            <span class="table-label">TABLE<br>TALK</span><span class="art-caption">Pull up a chair.</span>
+          </div>
+          <div class="project-heading"><h3 id="project-table-talk">Table Talk</h3><span>05</span></div>
+          <p class="project-description">An invitation to meet your neighbors over something good.</p>
+          <p class="project-meta">Identity · Food &amp; community</p>
+          <details><summary>Read case notes<span class="sr-only">: Table Talk</span></summary><div class="case-notes"><p><strong>Challenge.</strong> Make an invented neighborhood supper club feel open to first-time guests.</p><p><strong>Decision.</strong> Chairs and a shared table become simple geometric building blocks. Practical event information sits beside artwork, never embedded within it.</p><p><strong>Concept outcome.</strong> A flexible print and social identity. The project is fictional and has no real event reservations or measured participation.</p></div></details>
+        </article>
+
+        <article class="project project-narrow" data-disciplines="digital motion" aria-labelledby="project-small-hours">
+          <div class="project-art art-hours" aria-hidden="true">
+            <svg viewBox="0 0 600 670" preserveAspectRatio="xMidYMid slice" focusable="false"><path fill="#272323" d="M0 0h600v670H0z"/><circle cx="300" cy="340" r="196" fill="#ffe35b"/><circle cx="350" cy="270" r="184" fill="#272323"/><g fill="#ff785e"><circle cx="135" cy="124" r="13"/><circle cx="484" cy="472" r="18"/><circle cx="450" cy="126" r="8"/></g></svg>
+            <span class="hours-label">small<br>hours</span><span class="art-caption">A little space to slow down.</span>
+          </div>
+          <div class="project-heading"><h3 id="project-small-hours">Small Hours</h3><span>06</span></div>
+          <p class="project-description">A calmer digital place for stories at the end of the day.</p>
+          <p class="project-meta">Digital / Motion · Reading &amp; wellbeing</p>
+          <details><summary>Read case notes<span class="sr-only">: Small Hours</span></summary><div class="case-notes"><p><strong>Challenge.</strong> Introduce a fictional evening reading collection without adding more noise to the day.</p><p><strong>Decision.</strong> Use quiet spacing, a readable text mode, and optional short transitions. Do not auto-play audio or make motion necessary for navigation.</p><p><strong>Concept outcome.</strong> A digital art direction illustrated here with a static night motif. There are no medical claims, real subscribers, or completed app behind this concept.</p></div></details>
+        </article>
+      </div>
+    </section>
+
+    <section class="practice shell" id="practice" aria-labelledby="practice-title">
+      <h2 id="practice-title">Different skills.<br>Common ground.</h2>
+      <div class="practice-copy"><p>Good work starts with a shared question. We bring identity, digital design, and motion into the same conversation, then make the answer clear enough to travel.</p><p class="small-copy">Common Ground is a fictional practice. All six projects, illustrations, and case notes were created for this cookbook.</p><a class="text-link" href="#inquiry">How to start a project <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="inquiry" id="inquiry" aria-labelledby="inquiry-title"><div class="shell inquiry-inner"><div><p class="eyebrow">Start with a good question.</p><h2 id="inquiry-title">What could we<br>make together?</h2></div><div class="inquiry-copy"><p>For your own practice, replace this with a real contact route. Begin a useful brief with:</p><ol><li>Who you're trying to reach.</li><li>What they need to do or understand.</li><li>Your scope, constraints, and timeline.</li></ol><p class="small-copy">This learning example does not collect or send inquiries.</p></div></div></section>
+  </main>
+  <footer class="site-footer shell"><p>COMMON GROUND / Original concept work</p><a href="../index.html">All code examples <span aria-hidden="true">↗</span></a><a href="#main">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
