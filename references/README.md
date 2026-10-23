@@ -74,6 +74,10 @@ OnEarth is a website template. Its example impact totals, donations, dates, and 
 
 These are suggested exercises, not instructions to combine the source sites' branding or assets. Each new study includes its own original exercise and acceptance checks.
 
+## Learn from working code
+
+The [working examples](../examples/web/README.md) turn these principles into original, runnable HTML/CSS/JS: **Signal** (Linear + Resend), **Forma** (Aesop + teenage engineering), **Common Ground** (Ordinary Folk + Pentagram + Instrument), and **Orbit** (Lusion + Bruno Simon). Each source guide identifies the principle, implementation, interaction contract, and adaptation points. The earlier **Fieldwork** example remains available too.
+
 ## Use and expand the library
 
 - Use the [catalog](catalog.json) for IDs and metadata. For a partial refresher after initialization: `python tools/build_context.py --track web --reference aesop --out dist/aesop-context.md`.
