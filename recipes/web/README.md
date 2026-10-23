@@ -9,6 +9,6 @@ Use these as a working sequence. Each recipe contains inputs, a method, concrete
 5. [Accessible progressive UI](05-accessible-progressive-ui.md): implement keyboard behavior, semantics, feedback, and fallbacks.
 6. [Performance and review](06-performance-and-review.md): measure the result and report verification honestly.
 
-Work through the [Fieldwork example](../../examples/web/fieldwork/) alongside these recipes. Its source is deliberately small enough to read end to end. Reuse the methods and structure; do not treat its warm editorial style as the correct answer to every brief.
+Work through the [five working examples](../../examples/web/README.md) alongside these recipes. Compare Signal's dark product hierarchy, Forma's editorial commerce, Common Ground's expressive studio work, Orbit's atmospheric scene, and Fieldwork's warm editorial composition. Each has readable HTML, CSS, JavaScript, and a source guide. Reuse the methods and behavior that fit the brief; preserve the differences between their visual systems.
 
 For a coding agent, request a direction sheet before implementation and an evidence report afterward. Ask it to state which reference observations were actually verified. Design preferences, example budgets, and test viewport selections in these recipes are project heuristics; technical standards are identified and linked separately.
