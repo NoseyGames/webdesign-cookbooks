@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Signal: an original, fictional research workspace example built with semantic HTML, CSS, and JavaScript.">
+  <title>Signal — Keep the thread</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header shell">
+    <a class="wordmark" href="#main" aria-label="Signal home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>signal</a>
+    <nav aria-label="Main navigation"><a href="#workspace">Workspace</a><a href="#method">The method</a><a href="#code">Try the code <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> An independent workspace for research</p>
+      <div class="hero-grid">
+        <h1 id="hero-title">Good ideas start<br>with a <em>clear thread.</em></h1>
+        <div class="hero-aside"><p>Bring scattered notes into focus. Keep the evidence beside the idea, and give your next decision somewhere to begin.</p><a class="text-link" href="#workspace">Explore the workspace <span aria-hidden="true">↘</span></a></div>
+      </div>
+      <div class="hero-foot"><span>COLLECT / CONNECT / DECIDE</span><span>Fictional product · Working front-end example</span></div>
+    </section>
+
+    <section class="workspace-section shell" id="workspace" aria-labelledby="workspace-heading">
+      <h2 class="visually-hidden" id="workspace-heading">A research question, with its evidence in view</h2>
+      <figure class="workspace-figure">
+        <div class="workspace">
+          <div class="workspace-top"><span><span class="tiny-mark" aria-hidden="true">◌</span> Acorn / Research</span><span class="sample-label">SAMPLE WORKSPACE</span></div>
+          <div class="workspace-body">
+            <aside class="workspace-sidebar" aria-label="Illustrated workspace overview">
+              <p class="sidebar-label">LIBRARY</p>
+              <ul class="static-navigation"><li class="current">Research notes <span>03</span></li><li>Connections <span>02</span></li><li>Decisions <span>01</span></li></ul>
+              <div class="collection"><p class="sidebar-label">THIS COLLECTION</p><span class="folder-icon" aria-hidden="true">⌑</span><p>Finding the<br>next step</p><small>Product discovery / 01</small></div>
+              <p class="static-note">Illustrative preview.<br>Labels are not controls.</p>
+            </aside>
+            <article class="research-note">
+              <div class="note-meta"><span class="warm-tag">RESEARCH NOTE</span><span>01 / 03</span></div>
+              <h3>Where does the<br>next step get lost?</h3>
+              <p class="note-intro">A useful insight should lead somewhere. We’re exploring the gap between collecting research and deciding what to do with it.</p>
+              <div class="note-rule"></div>
+              <h4>What we’re looking for</h4>
+              <ul class="findings"><li><span class="finding-number">01</span><div><strong>Context that stays attached</strong><p>A finding keeps its source, date, and the question it was meant to answer.</p></div></li><li><span class="finding-number">02</span><div><strong>A visible next action</strong><p>Each open question has a small, specific follow-up someone can own.</p></div></li></ul>
+              <p class="note-footer"><span class="status-dot" aria-hidden="true"></span> Open question · Ready for discussion</p>
+            </article>
+            <aside class="evidence-panel" aria-labelledby="evidence-heading">
+              <h3 id="evidence-heading">Connected evidence <span>02</span></h3>
+              <div class="evidence-card"><span class="evidence-type">FIELD NOTE / 01</span><p>Three useful observations. No agreed next step.</p><span class="evidence-detail">Sample note · Planning session</span></div>
+              <div class="evidence-card second"><span class="evidence-type">WORKING HYPOTHESIS</span><p>Make the handoff as clear as the finding.</p><span class="evidence-detail">To explore · Not yet validated</span></div>
+              <div class="connection-art" aria-hidden="true"><span></span><span></span><span></span><svg viewBox="0 0 200 80"><path d="M25 40 C65 40 75 15 110 15 S155 40 175 40 M25 40 C65 40 75 65 110 65 S155 40 175 40"/></svg></div>
+              <p class="evidence-caption">The source and the interpretation<br>belong in the same conversation.</p>
+            </aside>
+          </div>
+        </div>
+        <figcaption><span>01 — A question in context</span><span>Original sample content. No customer claims or live data.</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="method-heading">
+      <div class="shell method-grid"><div class="method-heading"><p class="eyebrow">A LITTLE STRUCTURE. ROOM TO THINK.</p><h2 id="method-heading">From loose ends<br>to a <em>point of view.</em></h2><p>Research isn’t finished when it’s filed away. A simple structure makes it easier to return, connect, and act.</p></div>
+      <ol class="method-steps"><li><span class="step-number">01</span><div><h3>Keep the raw material.</h3><p>Capture the note and its source together. Separate what happened from what you think it means.</p></div></li><li><span class="step-number">02</span><div><h3>Find a useful connection.</h3><p>Group evidence around a question. Let disagreement remain visible; it often shows you what to investigate next.</p></div></li><li><span class="step-number">03</span><div><h3>Leave a clear next step.</h3><p>Write a decision or a follow-up. Give the next reader enough context to pick up the thread.</p></div></li></ol></div>
+    </section>
+
+    <section class="code-section shell" id="code" aria-labelledby="code-heading">
+      <div class="code-intro"><p class="eyebrow">SMALL EXAMPLE. REAL CODE.</p><h2 id="code-heading">Your notes.<br><em>Your next move.</em></h2><p>Start with a tiny, portable data model. These equivalent examples select the open research notes and keep only what a follow-up needs.</p><p class="code-note">Runs locally in Python 3 or a JavaScript console. No account, package, API key, or network request. This page displays code; it never executes it.</p></div>
+      <div class="code-workbench">
+        <!-- Both samples are readable until the enhancement is fully initialized. -->
+        <div class="code-toolbar" data-code-controls hidden><div class="language-buttons" role="group" aria-label="Code language"><button type="button" data-language="python" aria-pressed="true">Python</button><button type="button" data-language="javascript" aria-pressed="false">JavaScript</button></div><button class="copy-button" type="button" data-copy>Copy code <span aria-hidden="true">↗</span></button></div>
+        <section class="code-sample" data-sample="python" aria-labelledby="python-heading"><h3 id="python-heading">Python <span>follow_up.py</span></h3><pre tabindex="0" aria-label="Python example, scroll horizontally if needed"><code>import json
+
+notes = [
+    {"id": "R-01", "title": "Keep the source", "status": "open"},
+    {"id": "R-02", "title": "Clarify the handoff", "status": "open"},
+    {"id": "R-03", "title": "Archive the recap", "status": "closed"},
+]
+
+# A pure transformation: input stays unchanged.
+follow_up = [
+    {"id": note["id"], "title": note["title"]}
+    for note in notes
+    if note["status"] == "open"
+]
+
+print(json.dumps(follow_up, indent=2))</code></pre></section>
+        <section class="code-sample" data-sample="javascript" aria-labelledby="javascript-heading"><h3 id="javascript-heading">JavaScript <span>follow-up.js</span></h3><pre tabindex="0" aria-label="JavaScript example, scroll horizontally if needed"><code>const notes = [
+  { id: "R-01", title: "Keep the source", status: "open" },
+  { id: "R-02", title: "Clarify the handoff", status: "open" },
+  { id: "R-03", title: "Archive the recap", status: "closed" },
+];
+
+// A pure transformation: input stays unchanged.
+const followUp = notes
+  .filter((note) =&gt; note.status === "open")
+  .map(({ id, title }) =&gt; ({ id, title }));
+
+console.log(JSON.stringify(followUp, null, 2));</code></pre></section>
+        <div class="result"><span class="result-label">EXPECTED RESULT</span><p><span>R-01</span> Keep the source<br><span>R-02</span> Clarify the handoff</p></div>
+        <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
+        <p class="data-contract">Sample data assumes every note has a string <code>id</code>, <code>title</code>, and <code>status</code>. Validate those fields before adapting this to external input.</p>
+      </div>
+    </section>
+    <section class="closing shell" aria-labelledby="closing-heading"><div><p class="eyebrow">TAKE A CLOSER LOOK</p><h2 id="closing-heading">Good work leaves a thread.</h2></div><a class="text-link" href="#workspace">Back to the workspace <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer class="site-footer shell"><a class="wordmark" href="#main">signal<span class="footer-dot" aria-hidden="true">.</span></a><p>An original cookbook example.<br>Fictional product. Real HTML, CSS, and JavaScript.</p><a href="../index.html">All examples <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>
