@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Orbit is an original, fictional exhibition study in progressive enhancement and atmospheric web design.">
+  <title>Orbit — a place for curious minds</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="index.html" aria-label="Orbit home">orbit<span aria-hidden="true">®</span></a>
+    <nav aria-label="Main navigation"><a href="#installation">The installation</a><a href="#field-notes">Field notes</a><a class="nav-pill" href="../index.html">All examples <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-meta"><span>Independent ideas, connected.</span><span>Exhibition concept / No. 004</span></div>
+      <h1 id="hero-title">A place for<br><em>curious minds.</em></h1>
+      <div class="hero-bottom"><p>A small universe of experiments in light, memory, and the things we choose to notice.</p><a class="text-link" href="#installation">Enter the installation <span aria-hidden="true">↘</span></a></div>
+      <!-- The illustration is decoration. The same three destinations are ordinary HTML below. -->
+      <div class="hero-orb" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+      <span class="hero-coordinate" aria-hidden="true">[ 35° / 139° ] &nbsp; A FICTIONAL PLACE</span>
+    </section>
+
+    <section id="installation" class="installation wrap" aria-labelledby="installation-title">
+      <div class="section-heading"><p class="eyebrow">01 / The installation</p><h2 id="installation-title">Three ways<br>to pay attention.</h2><p>Three rooms, three perspectives. Explore the scene or follow the field notes below.</p></div>
+      <div class="scene" data-room="observatory">
+        <div class="scene-top"><span class="eyebrow">An imagined environment</span><span class="scene-number" aria-hidden="true">01 — 03</span></div>
+        <!-- SVG stays useful offline, requires no renderer, and has a reserved aspect ratio. -->
+        <svg class="scene-art" viewBox="0 0 900 470" aria-hidden="true" focusable="false">
+          <defs>
+            <radialGradient id="planet"><stop stop-color="#d4f1ce"/><stop offset=".38" stop-color="#819e80"/><stop offset=".8" stop-color="#31493a"/><stop offset="1" stop-color="#101f1c"/></radialGradient>
+            <linearGradient id="orbit-line"><stop stop-color="#354d44"/><stop offset=".48" stop-color="#d7ead8"/><stop offset="1" stop-color="#526c5a"/></linearGradient>
+          </defs>
+          <path class="floor-grid" d="M0 410H900 M0 435H900 M0 466H900 M450 340L0 470 M450 340L180 470 M450 340L340 470 M450 340L560 470 M450 340L720 470 M450 340L900 470"/>
+          <g class="constellation"><circle cx="138" cy="110" r="2"/><circle cx="735" cy="156" r="2"/><circle cx="215" cy="281" r="2"/><circle cx="676" cy="60" r="2"/><circle cx="798" cy="336" r="2"/></g>
+          <g class="sculpture">
+            <circle cx="450" cy="225" r="135" fill="url(#planet)"/>
+            <g class="orbital-rings"><ellipse cx="450" cy="225" rx="250" ry="64" transform="rotate(-26 450 225)"/><ellipse cx="450" cy="225" rx="237" ry="82" transform="rotate(41 450 225)"/><ellipse cx="450" cy="225" rx="176" ry="124" transform="rotate(77 450 225)"/></g>
+            <circle class="satellite" cx="246" cy="325" r="9"/>
+          </g>
+          <path class="annotation-line" d="M590 128H715V100"/><text x="725" y="102" class="annotation-label">AN IDEA IN ORBIT</text>
+        </svg>
+        <div class="scene-caption"><div><p class="eyebrow" id="room-index">Room 01</p><h3 id="room-title">The Observatory</h3><p id="room-description">Look a little longer. Patterns emerge when you let your eyes settle.</p></div><a id="room-link" class="circle-link" href="#observatory" aria-label="Read the Observatory field note">↗</a></div>
+      </div>
+      <!-- Enhancement-only controls are revealed after all handlers have been installed. -->
+      <div class="scene-controls" hidden>
+        <div class="room-buttons" role="group" aria-label="Choose a room">
+          <button type="button" data-room="observatory" aria-pressed="true">01 <span>Observatory</span></button>
+          <button type="button" data-room="archive" aria-pressed="false">02 <span>Archive</span></button>
+          <button type="button" data-room="garden" aria-pressed="false">03 <span>Garden</span></button>
+        </div>
+        <button type="button" class="motion-toggle" aria-pressed="false">Turn motion on</button>
+      </div>
+      <p class="enhancement-note">A quiet scene by default. Motion is optional; nothing needs to move for you to explore.</p>
+      <p id="scene-status" class="sr-only" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="field-notes" class="notes wrap" aria-labelledby="notes-title">
+      <div class="notes-heading"><p class="eyebrow">02 / Field notes</p><h2 id="notes-title">Stay for<br>the details.</h2><p>Three fictional installations. Three prompts for looking at an ordinary day differently.</p></div>
+      <div class="notes-list">
+        <article id="observatory"><span class="note-number">01</span><div><p class="eyebrow">Light / Perception</p><h3>The Observatory</h3><p>A slowly changing circle of light asks you to notice the edges, then the space between them. Imagine the same shape at dawn and at midnight.</p><details><summary>Open the observation prompt</summary><p>Choose an everyday object. Draw its shadow three times during a day. Which properties stay constant, and which belong to the light?</p></details></div></article>
+        <article id="archive"><span class="note-number">02</span><div><p class="eyebrow">Memory / Collection</p><h3>The Archive</h3><p>An imagined collection of small, overlooked things. Its value comes from the connections you make, rather than the rarity of any one object.</p><details><summary>Open the collection prompt</summary><p>Gather five ordinary objects with a shared texture. Arrange them by a different property. Describe what the second arrangement reveals.</p></details></div></article>
+        <article id="garden"><span class="note-number">03</span><div><p class="eyebrow">Time / Emergence</p><h3>The Garden</h3><p>A study in repetition with variation. A familiar form changes slightly each time it appears, suggesting a living system without recreating one.</p><details><summary>Open the pattern prompt</summary><p>Repeat a simple mark twenty times, changing only its angle. Find the point where repetition starts to look like movement.</p></details></div></article>
+      </div>
+    </section>
+    <section class="closing wrap"><p class="eyebrow">Make something from what you notice.</p><p class="closing-line">Attention is<br><em>a creative act.</em></p><a class="text-link" href="#hero-title">Back to the beginning <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer class="wrap"><span>Orbit / An original cookbook example</span><span>Fictional exhibition · No tickets or bookings</span><a href="../index.html">Browse all examples ↗</a></footer>
+</body>
+</html>
